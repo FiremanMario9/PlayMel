@@ -1,35 +1,80 @@
+/* ---------- General ---------- */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
-    background: #000;
+    background: #111;
     color: white;
-    font-family: Arial, sans-serif;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    min-height: 100vh;
-}
-
-img {
-    max-width: 800px;
-    width: 90%;
-    margin-top: 20px;
-}
-
-p {
-    max-width: 800px;
+    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    margin: 8px 20px;
 }
+
+/* ---------- Header ---------- */
+
+header {
+    padding: 40px 20px 10px;
+}
+
+.logo {
+    width: min(900px, 90%);
+}
+
+/* ---------- Main ---------- */
+
+main {
+    width: min(1100px, 95%);
+    margin: auto;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.tagline {
+    color: #cccccc;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+/* ---------- Trailer ---------- */
 
 iframe {
-    width: min(90vw, 1200px);
+    width: 100%;
     aspect-ratio: 16 / 9;
     border: none;
-    margin: 20px 0;
+    border-radius: 8px;
+
+    box-shadow:
+        0 0 40px rgba(0,120,255,.25);
 }
 
-a {
-    color: #ffb347;
+/* ---------- Button ---------- */
+
+.button {
+    display: inline-block;
+
+    margin: 35px 0 60px;
+    padding: 18px 36px;
+
+    background: #ff8c00;
+    color: white;
+
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    border-radius: 6px;
+
+    transition: .2s;
+}
+
+.button:hover {
+    background: #ffab2d;
+    transform: scale(1.05);
 }
